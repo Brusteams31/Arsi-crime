@@ -42,18 +42,6 @@ def console_clear() -> None:
     # Очистка для Linux
     else: os.system("clear")
 
-# Вывод лого
-def print_banner() -> None:
-    """Ввод баннера"""
-    console_clear()
-    print(F'{COLOR_CODE["RED"]}*–––––––––––––––––––––––————————*')
-    print(COLOR_CODE["RED"]+ "█▄▄ █   █▀█ █▀▀ █▄▀ █▀▄▀█ █▀█ █ █")
-    print(COLOR_CODE["GREEN"] + "█▄█ █▄▄ █▀█ █▄▄ █ █ █ ▀ █ █▀█ █ █▄▄" + COLOR_CODE["RESET"])
-    print(F'{COLOR_CODE["RED"]}{COLOR_CODE["BOLD"]}\n* Разработчик: {COLOR_CODE["RESET"]}{COLOR_CODE["LI_G"]}{GLOBAL_SOFT_INFO["AUTHOR"]}{COLOR_CODE["RESET"]}')
-    print(F'{COLOR_CODE["RED"]}{COLOR_CODE["BOLD"]}* Мы в Телеграме: {COLOR_CODE["RESET"]}{COLOR_CODE["LI_G"]}{GLOBAL_SOFT_INFO["SOFT_ORIGINAL_CHANNEL"]}{COLOR_CODE["RESET"]}')
-    print(F'{COLOR_CODE["RED"]}{COLOR_CODE["BOLD"]}* Оригинальная ссылка: {COLOR_CODE["RESET"]}{COLOR_CODE["LI_G"]}{GLOBAL_SOFT_INFO["SOFT_ORIGINAL_LINK"]}{COLOR_CODE["RESET"]}')
-    print(F'{COLOR_CODE["RED"]}{COLOR_CODE["BOLD"]}* Совет от нас: {COLOR_CODE["RESET"]}{COLOR_CODE["LI_G"]}Воспользуйтесь пунктом 5.{COLOR_CODE["RESET"]}')
-    print(F'{COLOR_CODE["LI_G"]}*––––––––––––––––––—————* V {GLOBAL_SOFT_INFO["SOFT_VERSION"]}{COLOR_CODE["RESET"]} *—BETA————*\n')
 
 # Показ текст соглашения
 def print_welcome_text() -> None:
